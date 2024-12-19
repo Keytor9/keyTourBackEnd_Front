@@ -1,0 +1,82 @@
+.navbar {
+    width: 100%;
+    background-color: #FFF;
+    padding: .6rem 1rem;
+    box-shadow: 0px 2px 12px 0px #0000000A;
+    /* height: 80px; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .6rem;
+    width: 100%;
+}
+
+.nav-brand img {
+    width: 100%;
+}
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul li a {
+    color: #1679AB;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 1rem;
+    padding: 0;
+}
+
+.nav-links ul li a.active {
+    color: #0C1E44;
+}
+
+.bars {
+    display: none;
+}
+
+.bars button {
+    border: none;
+    background-color: transparent;
+}
+
+.bars i {
+    color: #000;
+    font-size: 26px;
+}
+
+.Web-Profile-button {
+    background-color: #20438D;
+    padding: .6rem 1.2rem;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+@media (width <= 991px) { 
+    .nav .nav-links {
+        display: none;
+    }
+}
+
+@media (width <= 768px) { 
+    .bars {
+        display: block;
+    }
+    .offcanvas .nav-links ul {
+        flex-flow: column;
+        align-items: start;
+        padding: 1rem;
+    }
+    .offcanvas .nav-links ul li a {
+        margin: 1rem 0;
+    }
+    .nav-brand img {
+        width: 140px;
+    }
+}

@@ -1,0 +1,80 @@
+.footer-web {
+    background-color: #142C5E;
+    padding: 5rem 0 0 0;
+    height: 100%;
+    display: block;
+}
+
+.footer-web h2 {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 22px;
+}
+
+.footer-web p {
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    text-align: start;
+}
+
+.footer-web .footer-links {
+    display: flex;
+    flex-flow: column;
+}
+
+.footer .footer-links a {
+    color: #FFFFFFCC;
+    font-size: 16px;
+    margin-bottom: .8rem;
+}
+
+.footer .footer-links span {
+    color: #FFFFFFCC;
+    font-size: 16px;
+    margin-bottom: .8rem;
+}
+
+.footer .social {
+    display: flex;
+    align-items: center;
+}
+
+.footer .social li a {
+    background-color: #FFFFFF29;
+    border: 1px solid #FFFFFF29;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-right: 0.4rem;
+    color: #FFF;
+    transition: all .3s;
+}
+
+.footer .social li a:hover {
+    background-color: transparent;
+    border: 1px solid #FFFFFF29;
+    color: #FFFFFF29;
+    transition: all .3s;
+}
+
+.footer-web .copyRight {
+    padding: 1.5rem 0;
+    background-color: #0C1E44;
+    margin-top: 5rem;
+}
+
+.footer-web .copyRight p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-web .copyRight p a {
+    color: #FF9F2A;
+}

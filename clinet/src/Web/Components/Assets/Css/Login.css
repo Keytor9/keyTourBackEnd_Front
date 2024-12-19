@@ -1,0 +1,141 @@
+
+.base {
+  margin: 2rem 0;
+  text-align: center;
+}
+.base h1 {
+  font-size: 1.2rem;
+}
+.base .otp-base {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+.base .otp-base input {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #A4A1AA33;
+  outline: none;
+  font-size: 2rem;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  color: #000;
+}
+.base .otp-base input:focus {
+  border: 1px solid #F5FEE6
+}
+.base .button {
+  visibility: hidden;
+  position: absolute;
+  margin-top: 2rem;
+  right: 0;
+  text-transform: uppercase;
+  padding: 0.4rem;
+  background: none;
+  border: 1px solid #574b90;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.base .button.show {
+  visibility: visible;
+}
+.base .button:hover {
+  background: #574b90;
+  color: #fff;
+}
+.base .otp-error {
+  animation: shake 0.3s ease forwards;
+  pointer-events: none;
+}
+.base .otp-error input {
+  border-bottom: 2px solid red;
+  pointer-events: none;
+}
+.base .otp-error input:focus {
+  border-bottom: 2px solid red;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.login-form .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-flow: column;
+    padding: 5rem 0;
+}
+
+.login-form .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #142C5E;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #142C5E;
+    color: #FFF;
+    font-size: 16px;
+    padding: .6rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.resend {
+    text-align: left;
+    width: 100%;
+}
+
+.resend a {
+    color: #142C5E;
+    text-decoration: underline;
+    
+}
+
+
+.login-with-google {
+  border: 0.5px solid #10234A6E;
+  background-color: #FFF;
+  border-radius: 8px;
+  padding: .8rem 1rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: 1rem; */
+}
+
+.login-with-google img {
+  width: 20px;
+  height: 20px;
+}
+
+.login-with-google span {
+  width: calc(100% - 20px);
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}

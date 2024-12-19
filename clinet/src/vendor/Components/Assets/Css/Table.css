@@ -1,0 +1,286 @@
+.table-actions {
+    padding: 0 0 .6rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-filter {
+    background-color: #F3F4F7;
+    border-radius: 8px;
+    padding: .6rem;
+}
+
+.table-filter .filter-button {
+    background-color: transparent;
+    border: none;
+    color: #939EB5;
+    font-size: 14px;
+    margin: 0 .6rem;
+}
+
+.table .cancelled {
+    background-color: #F7BCB0;
+    padding: .3rem 2rem .3rem .6rem;
+    color: #E52600;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.table .cancelled .dot {
+    background-color: #E52600;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.table-filter .filter-button.active {
+    background-color: #FFF;
+    color: #FF9F2A;
+    font-size: 14px;
+    padding: 0 .6rem;
+    border-radius: 8px;
+}
+
+.table-form {
+    display: flex;
+    align-items: center;
+}
+
+.table-form .table-search input {
+    background-color: #F3F4F7;
+    padding: .4rem 1rem .4rem 2rem;
+    margin-right: 1rem;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-image: url("../img/search-normal.png");
+    background-position: 3% 50%;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    border-radius: 8px;
+    height: 30px;
+} 
+
+.table-form .add {
+    background-color: #142C5E;
+    border: 1px solid #142C5E;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    margin-left: 1.5rem;
+    transition: all .3s;
+}
+
+.table-form .add i {
+    font-size: 12px;
+}
+
+.table-form .share i {
+    font-size: 12px;
+}
+
+.table-form .add:hover {
+    background-color: transparent;
+    border: 1px solid #142C5E;
+    color: #142C5E;
+    transition: all .3s;
+}
+
+.table-form .share {
+    background-color: #FF9F2A;
+    border: 1px solid #FF9F2A;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    margin-left: 1rem;
+    transition: all .3s;
+}
+
+.table-form .share:hover {
+    background-color: transparent;
+    border: 1px solid #FF9F2A;
+    color: #FF9F2A;
+    transition: all .3s;
+}
+
+.table thead th {
+    background-color: #F0F1F5;
+    color: #43567E;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    padding: 0.6rem;
+    text-align: center;
+}
+
+.table td {
+    cursor: pointer;
+}
+
+.table td {
+    color: #939EB5;
+    font-size: 12px;
+    padding: 1rem 0.6rem;
+    text-align: center;
+}
+
+.table .accepted {
+    background-color: #D0EFB0;
+    padding: .3rem 2rem .3rem .6rem;
+    color: #387000;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.table .accepted .dot {
+    background-color: #387000;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.table .rejected {
+    background-color: #F7BCB0;
+    padding: .3rem 2rem .3rem .6rem;
+    color: #E52600;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.table .rejected .dot {
+    background-color: #E52600;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.table .pending {
+    background-color: #FFF4C0;
+    padding: .3rem .6rem .3rem .6rem;
+    color: #B59D24;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.table .pending .dot {
+    background-color: #B59D24;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.table-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.page-link {
+    border: none;
+    color: #939EB5;
+    margin: 0 1rem;
+    border-radius: 50% !important;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-link.active {
+    border: none;
+    color: #FFF !important;
+    background-color: #146E9C  !important;
+}
+
+.page-link:hover {
+    border: none;
+    color: #FFF !important;
+    background-color: #146f9c49  !important;
+}
+
+.action {
+    display: flex;
+}
+
+.table .edit {
+    background-color: #939EB5;
+    border: 1px solid #939EB5;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    margin: 0 .5rem;
+    transition: all .3s;
+}
+
+.table .edit i {
+    font-size: 10px;
+}
+
+.table .edit:hover {
+    background-color: transparent;
+    border: 1px solid #939EB5;
+    color: #939EB5;
+    transition: all .3s;
+}
+
+.table .delete {
+    background-color: #E52600;
+    border: 1px solid #E52600;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    margin: 0 .5rem;
+    transition: all .3s;
+}
+
+.table .delete i {
+    font-size: 11px;
+}
+
+.table .delete:hover {
+    background-color: transparent;
+    border: 1px solid #E52600;
+    color: #E52600;
+    transition: all .3s;
+}
+
+.pending-approve {
+    color: #387000;
+    margin: 0 .3rem;
+}
+
+.pending-reject {
+    color: #E52600;
+    margin: 0 .3rem;
+}
